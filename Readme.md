@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Nika Buzynska](https://up.htmlacademy.ru/adaptive/27/user/2221685).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://github.com/talequale)
 
 ---
 
