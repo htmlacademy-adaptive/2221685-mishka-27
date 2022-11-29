@@ -51,24 +51,24 @@
     <header class="form-container__header">
       <h2 class="form-container__title">Вязание на заказ</h2>
     </header>
-    <section class="form__section">
+    <section class="form-container__section">
       <h3 class="visually-hidden">Форма для заполнения</h3>
       <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__group">
           <legend class="form__group-title">Тип</legend>
           <ul class="form__list">
             <li class="form__list-item">
               <label class="form__control">
-                <input class="visually-hidden form__control-input" type="radio" name="interioraccessory"
-                  value="interior" checked="">
+                <input class="visually-hidden form__control-input" type="radio" name="item"
+                  value="interior" checked>
                 <span>Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="form__list-item">
               <label class="form__control">
-                <input class="visually-hidden form__control-input" type="radio" name="toy" value="toy">
+                <input class="visually-hidden form__control-input" type="radio" name="item" value="toy">
                 <span>Детская игрушка</span>
               </label>
             </li>
@@ -80,13 +80,13 @@
           <ul class="form__list">
             <li class="form__list-item">
               <label class="form__control">
-                <input class="visually-hidden form__control-input" type="checkbox" name="white" checked="">
+                <input class="visually-hidden form__control-input" type="checkbox" name="white" checked>
                 <span>Белый</span>
               </label>
             </li>
             <li class="form__list-item">
               <label class="form__control">
-                <input class="visually-hidden form__control-input" type="checkbox" name="grey" checked="">
+                <input class="visually-hidden form__control-input" type="checkbox" name="grey" checked>
                 <span>Серый</span>
               </label>
             </li>
@@ -119,15 +119,15 @@
         <fieldset class="form__group">
           <legend class="form__group-title">фио</legend>
           <label class="form__group-field">
-            Имя:
+            <span class="form__group-name">Имя:</span>
             <input class="form__text-input" type="text" name="name" placeholder="Введите ваше имя*">
           </label>
           <label class="form__group-field">
-            Фамилия:
+            <span class="form__group-name">Фамилия:</span>
             <input class="form__text-input" type="text" name="lastname" placeholder="Укажите фамилию*">
           </label>
           <label class="form__group-field">
-            Отчество:
+            <span class="form__group-name">Отчество:</span>
             <input class="form__text-input" type="text" name="fathersname" placeholder="Отчество, если желаете">
           </label>
         </fieldset>
@@ -135,20 +135,20 @@
           <legend class="form__group-title">тел</legend>
           <label class="form__group-field">
             <span class="visually-hidden">тел</span>
-            <input class="form__text-input" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <input class="form__text-input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </label>
         </fieldset>
         <fieldset class="form__group-field">
           <legend class="form__group-title">E-mail</legend>
           <label class="form__group-field">
             <span class="visually-hidden">E-mail</span>
-            <input class="form__text-input" type="text" name="email" placeholder="Ваш Email*">
+            <input class="form__text-input" type="email" name="email" placeholder="Ваш Email*">
           </label>
         </fieldset>
         <fieldset class="form__group-field">
           <legend class="form__group-title">Доп</legend>
           <label class="form__group-field">
-            <span class="visually-hidden">Доп</span>
+            <span class="visually-hidden">Дополнительный комментарий к заказу</span>
             <textarea class="form__textarea">
               Опишите все ваши пожелания к заказу
             </textarea>
