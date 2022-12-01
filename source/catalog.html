@@ -46,7 +46,7 @@
     <section class="catalog">
       <h3 class="visually-hidden">Каталог товаров</h3>
       <ul class="catalog__result-list">
-        <li class="catalog__result-link">
+        <li class="catalog__result-item">
           <a class="catalog__result-link" href="#">
             <img class="catalog__result-image" src="img/rabbit.jpeg" width="260" height="195" alt="Зайчик-попрыгайчик">
           </a>
@@ -105,11 +105,7 @@
         </li>
       </ul>
     </section>
-    <section class="inform__section">
-      <svg class="inform__item" xmlns="http://www.w3.org/2000/svg" width="32" height="22" fill="none">
-        <path fill="#63D1BB"
-          d="m26 10 6-4v16l-6-4v-8Zm-2 0v8c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4h10c0-1.1.9-2 2-2V2H5c-.6 0-1-.4-1-1s.4-1 1-1h12c.6 0 1 .4 1 1v3a2 2 0 0 1 2 2c2.2 0 4 1.8 4 4Zm-12 0H4v8h8v-8Zm8 1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1s.4 1 1 1h4c.6 0 1-.4 1-1Z" />
-      </svg>
+    <section class="inform">
       <h2 class="inform__title">Процесс производства</h2>
       <div class="inform__video">
         <img class="inform__image" src="img/video-basket.jpeg" width="260" height="150" alt="Процесс производства">
@@ -162,14 +158,25 @@
       </svg>
     </section>
   </footer>
-  <div class="modal-container modal-container__close">
+  <div class="modal-container modal-container--close">
     <div class="modal">
-      <h1 class="modal__title">Добавить в корзину</h1>
-      <p class="modal__text">Выберите размер:</p>
-      <button class="modal__size-button">S</button>
-      <button class="modal__size-button">M</button>
-      <button class="modal__size-button">L</button>
-      <button class="modal__button">Добавить</button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="modal-form__title">Добавить в корзину</h2>
+        <p class="modal-form__text">Выберите размер:</p>
+        <label class="modal-form__control">
+          <input class="modal-form__size-button" type="radio" name="size" value="S">
+          <span class="modal-form__button-name">S</span>
+        </label>
+        <label class="modal-form__control">
+          <input class="modal-form__size-button" type="radio" name="size" value="M">
+          <span class="modal-form__button-name">M</span>
+        </label>
+        <label class="modal-form__control">
+          <input class="modal-form__size-button" type="radio" name="size" value="L">
+          <span class="modal-form__button-name">L</span>
+        </label>
+        <button class="modal__button" type="submit">Добавить</button>
+      </form>
     </div>
   </div>
 </body>
