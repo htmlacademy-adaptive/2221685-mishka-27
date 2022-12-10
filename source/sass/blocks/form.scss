@@ -1,0 +1,34 @@
+.form__group {
+  padding: 0;
+  border: none;
+}
+
+.form__group-title {
+  color: #63d1bb;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.form__label-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__text-input {
+  display: block;
+  border: none;
+  box-shadow: inset 0 -2px 0 #000000;
+}
+
+.form__textarea {
+  border: 2px solid #444444;
+  min-height: 142px;
+}

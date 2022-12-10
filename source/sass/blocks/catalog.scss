@@ -1,0 +1,29 @@
+.catalog__result-list {
+  list-style-type: none;
+  padding: 30px;
+  // padding-left: 30px;
+  // padding-right: 30px;
+  margin: 0;
+}
+
+.catalog__result-item {
+  display: block;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__result-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog__result-card {
+  border: 1px solid #ececec;
+}
+
+.catalog__result-image {
+  vertical-align: bottom;
+}

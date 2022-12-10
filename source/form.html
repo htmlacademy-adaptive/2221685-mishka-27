@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 </head>
 
@@ -18,21 +19,21 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Каталог товаров</a>
+            <a class="site-list__link" href="#">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a href="#">
+            <a class="user-list__link" href="#">
               <svg class="user-list__magnifying-glass-icon" width="21" height="18"></svg>
               Поиск по сайту
             </a>
           </li>
           <li class="user-list__item">
-            <a href="#">
+            <a class="user-list__link" href="#">
               <svg class="user-list__cart-icon" width="21" height="18"></svg>
               Корзина
             </a>
@@ -54,15 +55,15 @@
           <legend class="form__group-title">Тип</legend>
           <ul class="form__list">
             <li class="form__list-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="radio" name="item" value="interior" checked>
-                <span>Аксессуар для интерьера</span>
+              <label class="form__label">
+                <input class="visually-hidden form__label-input" type="radio" name="item" value="interior" checked>
+                <span class="form__label-name">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="radio" name="item" value="toy">
-                <span>Детская игрушка</span>
+              <label class="form__label">
+                <input class="visually-hidden form__label-input" type="radio" name="item" value="toy">
+                <span class="form__label-name">Детская игрушка</span>
               </label>
             </li>
           </ul>
@@ -72,75 +73,75 @@
           <legend class="form__group-title">Цвет</legend>
           <ul class="form__list">
             <li class="form__list-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="checkbox" name="white" checked>
-                <span>Белый</span>
+              <label class="form__label">
+                <input class="visually-hidden form__label-input" type="checkbox" name="white" checked>
+                <span class="form__label-name">Белый</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="checkbox" name="grey" checked>
-                <span>Серый</span>
+              <label class="form__label">
+                <input class="visually-hidden form__label-input" type="checkbox" name="grey" checked>
+                <span class="form__label-name">Серый</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="checkbox" name="tiffany">
-                <span>Тиффани</span>
+              <label class="form__label">
+                <input class="visually-hidden form__label-input" type="checkbox" name="tiffany">
+                <span class="form__label-name">Тиффани</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="checkbox" name="black">
-                <span>Черный</span>
+              <label class="form__label">
+                <input class="visually-hidden form__label-input" type="checkbox" name="black">
+                <span class="form__label-name">Черный</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="checkbox" name="pink">
-                <span>Розовый</span>
+              <label class="form__label">
+                <input class="visually-hidden form__label-input" type="checkbox" name="pink">
+                <span class="form__label-name">Розовый</span>
               </label>
             </li>
             <li class="form__list-item">
-              <label class="form__control">
-                <input class="visually-hidden form__control-input" type="checkbox" name="orange">
-                <span>Оранжевый</span>
+              <label class="form__label">
+                <input class="visually-hidden form__label-input" type="checkbox" name="orange">
+                <span class="form__label-name">Оранжевый</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__group-title">фио</legend>
-          <label class="form__group-field">
-            <span class="form__group-name">Имя:</span>
+          <label class="form__label">
+            <span class="form__label-name">Имя:</span>
             <input class="form__text-input" type="text" name="name" placeholder="Введите ваше имя*">
           </label>
-          <label class="form__group-field">
-            <span class="form__group-name">Фамилия:</span>
+          <label class="form__label">
+            <span class="form__label-name">Фамилия:</span>
             <input class="form__text-input" type="text" name="lastname" placeholder="Укажите фамилию*">
           </label>
-          <label class="form__group-field">
-            <span class="form__group-name">Отчество:</span>
+          <label class="form__label">
+            <span class="form__label-name">Отчество:</span>
             <input class="form__text-input" type="text" name="fathersname" placeholder="Отчество, если желаете">
           </label>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__group-title">тел</legend>
-          <label class="form__group-field">
+          <label class="form__label">
             <span class="visually-hidden">тел</span>
             <input class="form__text-input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </label>
         </fieldset>
-        <fieldset class="form__group-field">
+        <fieldset class="form__group">
           <legend class="form__group-title">E-mail</legend>
-          <label class="form__group-field">
+          <label class="form__label">
             <span class="visually-hidden">E-mail</span>
             <input class="form__text-input" type="email" name="email" placeholder="Ваш Email*">
           </label>
         </fieldset>
-        <fieldset class="form__group-field">
+        <fieldset class="form__group">
           <legend class="form__group-title">Доп</legend>
-          <label class="form__group-field">
+          <label class="form__label">
             <span class="visually-hidden">Дополнительный комментарий к заказу</span>
             <textarea class="form__textarea">
               Опишите все ваши пожелания к заказу
