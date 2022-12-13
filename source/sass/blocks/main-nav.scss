@@ -1,4 +1,15 @@
+.main-nav {
+  text-align: center;
+  font-weight: 700;
+}
+
 .main-nav__toggle {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  background-image: url(../../img/menu.svg);
+  top: 32px;
+  right: 31px;
   display: inline-block;
   background-color: #ffffff;
   border: none;

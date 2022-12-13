@@ -1,8 +1,47 @@
+.informative-stand {
+  margin-top: 30px;
+}
+
 .informative-stand__title {
-  margin-left: 30px;
+  margin: 0 30px 30px 30px;
+  font-size: 25px;
 }
 
 .informative-stand__list {
   list-style-type: none;
   padding: 0 30px 0;
+  margin: 0;
+}
+
+.informative-stand__item {
+  padding-top: 53px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  background-repeat: no-repeat;
+
+  &--flower {
+    background-image: url("../img/flower.svg");
+  }
+
+  &--ruble {
+    background-image: url("../img/ruble.svg")
+  }
+
+  &--heart {
+    background-image: url("../img/heart.svg")
+  }
+
+  &--ball {
+    background-image: url("../img/ball.svg")
+  }
+
+  &--rocket {
+    background-image: url("../img/rocket.svg")
+  }
+
+  &--present {
+    background-image: url("../img/present.svg")
+  }
 }

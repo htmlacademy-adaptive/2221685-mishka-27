@@ -9,9 +9,11 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка».">
-    </a>
+    <div class="main-header__container">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -59,26 +61,13 @@
     <section class="front-catalog">
       <h2 class="visually-hidden">Каталог главной страницы</h2>
       <ul class="front-catalog__list">
-        <li class="front-catalog__item">
+        <li class="front-catalog__item front-catalog__item--lamp">
           <a class="front-catalog__link" href="#">
-            <svg class="front-catalog__lamp-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="62" fill="none">
-              <g fill="#149080" opacity=".5">
-                <path
-                  d="M15.16 37.72c-.3 1-.2 2.19 0 3.58.5 2.59 1.7 5.97 2.4 9.65h5.08c.7-3.58 1.9-6.96 2.5-9.65.3-1.4.3-2.69 0-3.58-.3-.9-.9-1.6-2-2.3h-5.98c-1.2.7-1.8 1.4-2 2.3ZM26.93 57.62H13.17c-1.3 0-2.3 1-2.3 2.19V62h18.36v-2.19c0-1.2-1-2.19-2.3-2.19ZM34.02 2.19H22.34c0-1.2-1-2.19-2.29-2.19-1.3 0-2.3 1-2.3 2.19H6.09L0 27.57c.8-.5 1.6-1 2.6-1 1.39 0 2.19.8 2.89 1.4.7.6 1.2.8 1.4.8.3 0 .8-.3 1.49-.8.7-.5 1.6-1.4 2.9-1.4 1.29 0 2.19.8 2.88 1.4.7.5 1.2.8 1.5.8.1 0 .3-.1.6-.2.2-.1.5-.4.9-.6.5-.4 1.1-1 2-1.2.3-.1.6-.1.89-.1 1.3 0 2.2.8 2.9 1.4.7.5 1.19.8 1.49.8.3 0 .8-.3 1.4-.8.7-.6 1.6-1.4 2.89-1.4 1.4 0 2.2.8 2.9 1.4.29.3.59.5.89.6.2.1.4.2.6.2.3 0 .8-.3 1.4-.9.7-.6 1.59-1.4 2.89-1.4 1 0 1.8.5 2.59 1L34.02 2.19ZM23.44 53.14h-6.88c-.7 0-1.1.5-1.1 1.1 0 .6.5 1.1 1.1 1.1h6.88c.7 0 1.1-.5 1.1-1.1.1-.6-.4-1.1-1.1-1.1Z" />
-                <path d="M20.05 28.76c-.1 0-.3.1-.6.2-.2.1-.4.3-.6.4v3.68h2.3v-3.58c-.5-.4-.9-.7-1.1-.7Z" />
-              </g>
-            </svg>
             Предметы интерьера
           </a>
         </li>
-        <li class="front-catalog__item front-catalog__item--secondary">
+        <li class="front-catalog__item front-catalog__item--lego">
           <a class="front-catalog__link" href="#">
-            <svg class="front-catalog__lego-icon" width="60" height="60" viewBox="0 0 60 60" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.5"
-                d="M0 43.9933L27.4 60V36.5436L0 20.4362V43.9933ZM51.3 12.4832V15C51.3 16.8121 47.8 18.3221 43.6 18.3221C39.3 18.3221 35.9 16.8121 35.9 15V10.8725C36.2 12.5839 39.5 13.9933 43.6 13.9933C47.9 13.9933 51.3 12.4832 51.3 10.6711C51.3 8.85907 47.8 7.349 43.6 7.349C43.3 7.349 42.9 7.349 42.6 7.349L37.6 4.42954V7.55034C37.6 9.36242 34.1 10.8725 29.9 10.8725C27.2 10.8725 24.9 10.2685 23.5 9.36242C23.3 9.16108 23.1 8.95973 22.8 8.75839C22.4 8.3557 22.2 7.95302 22.2 7.55034V4.5302L17.4 7.349C17.1 7.349 16.7 7.349 16.3 7.349C12 7.349 8.60001 8.85907 8.60001 10.6711C8.60001 12.4832 12.1 13.9933 16.3 13.9933C20.4 13.9933 23.7 12.5839 24 10.8725V15C24 16.8121 20.5 18.3221 16.3 18.3221C12 18.3221 8.60001 16.8121 8.60001 15V12.5839L2.60001 16.1074L30.1 32.2148L57.5 16.2081L51.3 12.4832ZM37.7 22.7517C37.7 24.5638 34.2 26.0738 30 26.0738C25.7 26.0738 22.3 24.5638 22.3 22.7517V18.6242C22.6 20.3356 25.9 21.745 30 21.745C34.1 21.745 37.4 20.3356 37.7 18.6242V22.7517ZM32.6 36.745V60L60 43.9933V20.7383L32.6 36.745ZM29.9 6.6443C34.2 6.6443 37.6 5.13423 37.6 3.32215C37.6 1.51007 34.1 0 29.9 0C25.6 0 22.2 1.51007 22.2 3.32215C22.2 5.13423 25.6 6.6443 29.9 6.6443Z"
-                fill="#149080" />
-            </svg>
             Детские игрушки
           </a>
         </li>
@@ -105,35 +94,31 @@
       </table>
       <div class="product-demonstration__details">
         <img class="product-demonstration__image" src="img/basket.jpg" width="260" height="315" alt="Вязаная корзинка">
-        <b class="product-demonstration__price-tag">Цена: 990 руб.</b>
+        <div class="product-demonstration__price-wrapper">
+          <b class="product-demonstration__price-tag">Цена: 990 руб.</b>
+        </div>
         <button class="product-demonstration__button" type="button">ЗАКАЗАТЬ</button>
       </div>
     </section>
     <section class="informative-stand">
       <h2 class="informative-stand__title">Коротко о нас:</h2>
       <ul class="informative-stand__list">
-        <li class="informative-stand__item">
-          <img class="informative-stand__icon" src="img/flower.svg" width="33" height="38" alt="цветок">
+        <li class="informative-stand__item informative-stand__item--flower">
           Экологически чистые материалы
         </li>
-        <li class="informative-stand__item">
-          <img class="informative-stand__icon" src="img/ruble.svg" width="47" height="27" alt="рубль">
+        <li class="informative-stand__item informative-stand__item--ruble">
           Скандинавский стиль по российской цене
         </li>
-        <li class="informative-stand__item">
-          <img class="informative-stand__icon" src="img/heart.svg" width="34" height="27" alt="сердечко">
+        <li class="informative-stand__item informative-stand__item--heart">
           Увеличивает лайки на фотографиях
         </li>
-        <li class="informative-stand__item">
-          <img class="informative-stand__icon" src="img/ball.svg" width="35" height="34" alt="клубок">
+        <li class="informative-stand__item informative-stand__item--ball">
           Связано вручную с любовью и умилением
         </li>
-        <li class="informative-stand__item">
-          <img class="informative-stand__icon" src="img/rocket.svg" width="55" height="23" alt="ракета">
+        <li class="informative-stand__item informative-stand__item--rocket">
           Поддержка отечественного производителя
         </li>
-        <li class="informative-stand__item">
-          <img class="informative-stand__icon" src="img/present.svg" width="33" height="32" alt="подарок">
+        <li class="informative-stand__item informative-stand__item--present">
           Поставляется в подарочной упаковке
         </li>
       </ul>
@@ -152,26 +137,32 @@
           <p class="reviews__author-nickname">@misssssiskras</p>
         </a>
       </div>
-      <button class="reviews__slide-button" type="button"></button>
-      <button class="reviews__slide-button" type="button"></button>
+      <div class="reviews__slide-button-wrapper">
+        <button class="reviews__slide-button reviews__slide-button--previous" type="button"></button>
+        <button class="reviews__slide-button reviews__slide-button--next" type="button"></button>
+      </div>
       <a class="reviews__button" href="#"">написать</a>
     </section>
-    <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__table">
-        <tr class="contacts__row">
-          <th class="contacts__header">e-mail:</th>
-          <td class="contacts__data">info@mimimishkashop.ru</td>
-        </tr>
-        <tr class="contacts__row">
-          <th class="contacts__header">адрес:</th>
-          <td class="contacts__data">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
-        </tr>
-      </table>
-      <a class="contacts__map" href="#">
-        <img class="contacts__map-image" src="img/map.jpg" width="320" height="454" alt="карта">
-      </a>
-      <a class="contacts__button" href="#">напишите нам</a>
+    <section class=" contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__table">
+          <tr class="contacts__row">
+            <th class="contacts__header">e-mail:</th>
+            <td class="contacts__data">info@mimimishkashop.ru</td>
+          </tr>
+          <tr class="contacts__row">
+            <th class="contacts__header">адрес:</th>
+            <td class="contacts__data">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
+          </tr>
+        </table>
+        <div class="contacts__map">
+          <a class="contacts__map-link" href="#">
+            <img class="contacts__map-image" src="img/map.jpg" width="320" height="454" alt="карта">
+          </a>
+        </div>
+        <div class="contacts__button-wrapper">
+          <a class="contacts__button" href="#">напишите нам</a>
+        </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -214,9 +205,9 @@
       </ul>
     </section>
     <section class="page-footer__copyright">
-      <h3 class="page-footer__copyright-title">Разработано</h3>
-      <a class="page-footer__copyright-link">
-        <svg class="page-footer__copyright-icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg"
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
+        <h3 class="page-footer__copyright-title">Разработано</h3>
+        <svg class="page-footer__copyright-icon" width="41" height="auto" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 60 60">
           <path fill="#63D1BB"
             d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
@@ -230,18 +221,20 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="modal-form__title">Добавить<br>в корзину</h2>
         <p class="modal-form__text">Выберите размер:</p>
+        <div class="modal-form__container">
         <label class="modal-form__control">
-          <input class="modal-form__size-button" type="radio" name="size" value="S">
+          <input class="modal-form__size-button visually-hidden" type="radio" name="size" value="S">
           <span class="modal-form__button-name">S</span>
         </label>
         <label class="modal-form__control">
-          <input class="modal-form__size-button" type="radio" name="size" value="M">
+          <input class="modal-form__size-button visually-hidden" type="radio" name="size" value="M">
           <span class="modal-form__button-name">M</span>
         </label>
         <label class="modal-form__control">
-          <input class="modal-form__size-button" type="radio" name="size" value="L">
+          <input class="modal-form__size-button visually-hidden" type="radio" name="size" value="L">
           <span class="modal-form__button-name">L</span>
         </label>
+      </div>
         <button class="modal__button" type="submit">Добавить</button>
       </form>
     </div>

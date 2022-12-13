@@ -1,10 +1,48 @@
+.contacts__title {
+  padding-left: 30px;
+  font-size: 25px;
+}
+
+.contacts__table {
+  padding: 28px 30px;
+  padding-bottom: 0;
+}
+
+.contacts__row {
+  font-size: 14px;
+}
+
 .contacts__header {
+  min-width: 76px;
   font-weight: 400;
   text-align: start;
-  padding: 0 30px 0;
+  vertical-align: top;
+}
+
+.contacts__data {
+  padding-bottom: 40px;
 }
 
 .contacts__map-image {
-  margin-bottom: 41px;
   display: block;
+}
+
+.contacts__button-wrapper {
+  padding: 40px 30px;
+}
+
+.contacts__button {
+  display: inline-block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  border: 2px solid #444444;
+  text-decoration: none;
+  text-transform: uppercase;
 }

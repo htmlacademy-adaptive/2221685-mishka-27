@@ -1,4 +1,26 @@
 .page-footer__social-list {
   display: flex;
   list-style-type: none;
+  padding-left: 0;
+  width: 142px;
+  margin: 25px auto;
+  justify-content: space-between;
+}
+
+.page-footer__copyright {
+  width: 182px;
+  margin: 25px auto;
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.page-footer__copyright-title {
+  margin: 0;
+  color: #000000;
+  font-size: 19px;
+  line-height: 18px;
 }
