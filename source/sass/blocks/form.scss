@@ -1,9 +1,20 @@
+.form {
+  padding: 30px 30px 30px 0;
+}
+
 .form__group {
   padding: 0;
   border: none;
+  margin: 0;
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .form__group-title {
+  margin-bottom: 19px;
   color: #63d1bb;
   font-weight: 700;
   font-size: 17px;
@@ -14,6 +25,15 @@
 .form__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+.form__list-item {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__label-name {
@@ -24,6 +44,7 @@
 
 .form__text-input {
   display: block;
+  width: 100%;
   border: none;
   box-shadow: inset 0 -2px 0 #000000;
 }
@@ -31,4 +52,23 @@
 .form__textarea {
   border: 2px solid #444444;
   min-height: 142px;
+  min-width: 260px;
+}
+
+.form__small-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__button {
+  width: 260px;
+  padding: 18px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
 }
