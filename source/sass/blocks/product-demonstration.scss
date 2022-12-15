@@ -1,0 +1,36 @@
+.product-demonstration {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.product-demonstration__title {
+  margin: 0;
+}
+
+.product-demonstration__subtitle {
+  color: #63d1bb;
+  margin: 0;
+}
+
+.product-demonstration__description {
+  line-height: 24px;
+}
+
+.product-demonstration__price-wrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.product-demonstration__button {
+  width: 260px;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+}

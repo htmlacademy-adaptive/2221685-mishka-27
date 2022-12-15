@@ -1,0 +1,21 @@
+.main-container {
+  background-color: #ffffff;
+}
+
+.main-container__header--picture {
+  min-height: 283px;
+  padding-top: 73px;
+  background-color: #000000;
+  background-image: url("../../img/hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main-container__title {
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 30px;
+}

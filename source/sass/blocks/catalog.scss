@@ -1,0 +1,51 @@
+.catalog__result-list {
+  list-style-type: none;
+  padding: 30px;
+  // padding-left: 30px;
+  // padding-right: 30px;
+  margin: 0;
+}
+
+.catalog__result-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog__result-card {
+  padding: 27px;
+  border: 1px solid #ececec;
+}
+
+.catalog__result-title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog__result-item {
+  display: block;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__result-description {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog__result-price-container {
+  display: flex;
+}
+
+.catalog__result-button {
+  margin-left: auto;
+  background-color: #ffffff;
+  border: none;
+}
+
+.catalog__result-image {
+  vertical-align: bottom;
+}
