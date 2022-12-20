@@ -1,14 +1,28 @@
+.front-catalog {
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .front-catalog__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .front-catalog__item {
-
   text-decoration: none;
   background-color: #63d1bb;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 
   &--lamp {
     background-image: url("../img/lamp.svg");
