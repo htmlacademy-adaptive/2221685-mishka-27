@@ -2,15 +2,38 @@
   background-color: #ffffff;
 }
 
-.main-container__header--picture {
-  min-height: 283px;
-  padding-top: 73px;
-  background-color: #000000;
+.main-container__header {
+  background-color: #f9f9f9;
+}
+
+.main-container__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 489px;
   background-image: url("../../img/hero-mobile.jpg");
+  background-color: #f9f9f9;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
   box-sizing: border-box;
+  padding-top: 73px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 758px;
+    padding-top: 155px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding-top: 158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .main-container__title {
@@ -18,15 +41,14 @@
   line-height: 30px;
   margin: 0;
   padding: 0 30px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 109px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 114px;
     font-size: 53px;
     line-height: 57px;
   }

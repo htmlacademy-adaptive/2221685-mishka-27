@@ -1,8 +1,18 @@
 .form-container__header {
   min-height: 177px;
+  padding-top: 74px;
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 101px;
+    padding-bottom: 75px;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .form-container__title {
-  text-align: center;
-  padding-top: 73px;
+  margin: 0;
 }

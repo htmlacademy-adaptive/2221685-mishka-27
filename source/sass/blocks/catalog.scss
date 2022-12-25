@@ -1,12 +1,30 @@
+.catalog {
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
 .catalog__result-list {
   list-style-type: none;
   padding: 30px;
   // padding-left: 30px;
   // padding-right: 30px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .catalog__result-link {
+  display: inline-block;
   text-decoration: none;
   color: #000000;
 }
@@ -14,6 +32,13 @@
 .catalog__result-card {
   padding: 27px;
   border: 1px solid #ececec;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .catalog__result-title {
@@ -24,10 +49,22 @@
 
 .catalog__result-item {
   display: block;
+  min-width: 260px;
   margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    max-width: 316px;
+    margin-bottom: 0;
+    flex-grow: 1;
   }
 }
 
@@ -38,6 +75,7 @@
 
 .catalog__result-price-container {
   display: flex;
+  margin-top: auto;
 }
 
 .catalog__result-button {

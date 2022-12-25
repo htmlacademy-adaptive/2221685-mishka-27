@@ -1,6 +1,10 @@
 .modal-form {
   padding: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 37px 108px 46px;
+  }
 }
 
 .modal-form__title {
@@ -15,6 +19,7 @@
 .modal-form__container {
   display: flex;
   margin-bottom: 31px;
+  justify-content: center;
 }
 
 .modal-form__control {
@@ -32,6 +37,10 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .modal__button {
@@ -46,4 +55,8 @@
   line-height: 16px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

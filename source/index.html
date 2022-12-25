@@ -64,52 +64,57 @@
     </nav>
   </header>
   <main class="main-container">
-    <header class="main-container__header main-container__header--picture">
-      <h1 class="main-container__title">Милые штуки ручной<br>работы для дома</h1>
-    </header>
-    <section class="front-catalog">
-      <h2 class="visually-hidden">Каталог главной страницы</h2>
-      <ul class="front-catalog__list">
-        <li class="front-catalog__item front-catalog__item--lamp">
-          <a class="front-catalog__link" href="#">
-            Предметы<br>интерьера
-          </a>
-        </li>
-        <li class="front-catalog__item front-catalog__item--lego">
-          <a class="front-catalog__link" href="#">
-            Детские<br>игрушки
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="product-demonstration">
-      <div class="product-demonstration__title-wrapper">
-        <h2 class="product-demonstration__title">Вязаные корзинки</h2>
-        <h3 class="product-demonstration__subtitle">Товар недели</h3>
+    <header class="main-container__header">
+      <div class="main-container__content-wrapper">
+        <h1 class="main-container__title">Милые штуки ручной<br>работы для дома</h1>
+        <section class="front-catalog">
+          <h2 class="visually-hidden">Каталог главной страницы</h2>
+          <ul class="front-catalog__list">
+            <li class="front-catalog__item front-catalog__item--lamp">
+              <a class="front-catalog__link" href="#">
+                Предметы<br>интерьера
+              </a>
+            </li>
+            <li class="front-catalog__item front-catalog__item--lego">
+              <a class="front-catalog__link" href="#">
+                Детские<br>игрушки
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
-      <div class="product-demonstration__description-wrapper">
-        <p class="product-demonstration__description">Экологически чистая пряжа, ручная работа. Доступны в шести
-          расцветках и трёх размерах.</p>
-        <table class="detail">
-          <tr class="detail__row">
-            <th class="detail__header">Цвет:</th>
-            <td class="detail__data">тиффани/серый</td>
-          </tr>
-          <tr class="detail__row">
-            <th class="detail__header">Диаметр:</th>
-            <td class="detail__data">25см</td>
-          </tr>
-          <tr class="detail__row">
-            <th class="detail__header">Высота:</th>
-            <td class="detail__data">15см</td>
-          </tr>
-        </table>
-        <img class="product-demonstration__image" src="img/basket.jpg" width="260" height="315" alt="Вязаная корзинка">
-        <div class="product-demonstration__details">
-          <div class="product-demonstration__price-wrapper">
-            <b class="product-demonstration__price-tag">Цена: 990 руб.</b>
+    </header>
+    <section class="product-demonstration">
+      <div class="product-demonstration__content-wrapper">
+        <div class="product-demonstration__title-wrapper">
+          <h2 class="product-demonstration__title">Вязаные корзинки</h2>
+          <h3 class="product-demonstration__subtitle">Товар недели</h3>
+        </div>
+        <div class="product-demonstration__description-wrapper">
+          <p class="product-demonstration__description">Экологически чистая пряжа, ручная работа. Доступны в шести
+            расцветках и трёх размерах.</p>
+          <table class="product-demonstration__detail detail">
+            <tr class="detail__row">
+              <th class="detail__header">Цвет:</th>
+              <td class="detail__data">тиффани/серый</td>
+            </tr>
+            <tr class="detail__row">
+              <th class="detail__header">Диаметр:</th>
+              <td class="detail__data">25см</td>
+            </tr>
+            <tr class="detail__row">
+              <th class="detail__header">Высота:</th>
+              <td class="detail__data">15см</td>
+            </tr>
+          </table>
+          <img class="product-demonstration__image" src="img/basket.jpg" width="260" height="315"
+            alt="Вязаная корзинка">
+          <div class="product-demonstration__details">
+            <div class="product-demonstration__price-wrapper">
+              <b class="product-demonstration__price-tag">Цена: 990 руб.</b>
+            </div>
+            <button class="product-demonstration__button" type="button">ЗАКАЗАТЬ</button>
           </div>
-          <button class="product-demonstration__button" type="button">ЗАКАЗАТЬ</button>
         </div>
       </div>
     </section>
@@ -156,29 +161,36 @@
       </div>
       <a class="reviews__button" href="#">написать</a>
     </section>
-    <section class=" contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <table class="contacts__table">
-        <tr class="contacts__row">
-          <th class="contacts__header">e-mail:</th>
-          <td class="contacts__data">info@mimimishkashop.ru</td>
-        </tr>
-        <tr class="contacts__row">
-          <th class="contacts__header">адрес:</th>
-          <td class="contacts__data">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
-        </tr>
-      </table>
-      <div class="contacts__map">
-        <a class="contacts__map-link" href="#">
-          <img class="contacts__map-image" src="img/map.jpg" width="320" height="454" alt="карта">
-        </a>
+    <section class="contacts">
+      <div class="contacts__content-wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__table">
+          <tr class="contacts__row">
+            <th class="contacts__header">e-mail:</th>
+            <td class="contacts__data">info@mimimishkashop.ru</td>
+          </tr>
+          <tr class="contacts__row">
+            <th class="contacts__header">адрес:</th>
+            <td class="contacts__data">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</td>
+          </tr>
+        </table>
       </div>
-      <div class="contacts__button-wrapper">
-        <a class="contacts__button" href="#">напишите нам</a>
-      </div>
+        <div class="contacts__map">
+          <a class="contacts__map-link" href="#">
+            <img class="contacts__map-image" src="img/map.jpg" width="320" height="454" alt="карта">
+          </a>
+        </div>
+        <div class="contacts__button-wrapper">
+          <a class="contacts__button" href="#">напишите нам</a>
+        </div>
     </section>
   </main>
   <footer class="page-footer">
+    <div class="page-footer__logo">
+      <a class="page-footer__logo-link" href="index.html">
+        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+    </div>
     <section class="page-footer__social">
       <h3 class="visually-hidden">Социальные сети</h3>
       <ul class="page-footer__social-list">
@@ -232,7 +244,7 @@
   <div class="modal-container modal-container--close">
     <div class="modal">
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="modal-form__title">Добавить<br>в корзину</h2>
+        <h2 class="modal-form__title">Добавить в корзину</h2>
         <p class="modal-form__text">Выберите размер:</p>
         <div class="modal-form__container">
           <label class="modal-form__control">
