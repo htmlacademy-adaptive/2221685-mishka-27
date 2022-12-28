@@ -6,13 +6,15 @@
     display: flex;
     order: 2;
     position: absolute;
-    top: 89px;
+    top: 100%;
     left: 0;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     position: unset;
     order: 0;
+    padding-left: 0;
   }
 }
 
@@ -21,10 +23,14 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
+    padding: 0 18px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 35px;
+
     &:first-child {
+      padding-left: 0;
       border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
   }
@@ -42,15 +48,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
-    padding: 20px  18px 20px 18px;
-
-    &--catalog {
-      padding-left: 50px;
-    }
+    padding: 20px 0 20px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
-    padding: 30px 35px 35px 35px;
+    padding: 30px 0 35px;
   }
 }

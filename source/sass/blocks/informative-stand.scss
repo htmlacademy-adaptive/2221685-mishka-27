@@ -34,8 +34,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    column-count: 2;
     padding: 0;
   }
 }
@@ -50,50 +49,26 @@
 
   &--flower {
     background-image: url("../img/flower.svg");
-
-    @media (min-width: $tablet-width) {
-      order: 0;
-    }
   }
 
   &--ruble {
     background-image: url("../img/ruble.svg");
-
-    @media (min-width: $tablet-width) {
-      order: 2;
-    }
   }
 
   &--heart {
     background-image: url("../img/heart.svg");
-
-    @media (min-width: $tablet-width) {
-      order: 4;
-    }
   }
 
   &--ball {
     background-image: url("../img/ball.svg");
-
-    @media (min-width: $tablet-width) {
-      order: 1;
-    }
   }
 
   &--rocket {
     background-image: url("../img/rocket.svg");
-
-    @media (min-width: $tablet-width) {
-      order: 3;
-    }
   }
 
   &--present {
     background-image: url("../img/present.svg");
-
-    @media (min-width: $tablet-width) {
-      order: 5;
-    }
   }
 
   @media (min-width: $tablet-width) {

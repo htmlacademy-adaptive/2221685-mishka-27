@@ -100,8 +100,8 @@
 .product-demonstration__description-wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 0 40px;
+    grid-template-columns: 1fr 334px;
+    gap: 0 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,6 +119,7 @@
     order: 3;
     width: 334px;
     height: 404px;
+    object-fit: cover;
   }
 
   @media (min-width: $desktop-width) {
