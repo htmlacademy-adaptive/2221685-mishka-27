@@ -1,16 +1,42 @@
 .informative-stand {
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    margin-bottom: 89px;
+  }
 }
 
 .informative-stand__title {
   margin: 0 30px 30px 30px;
   font-size: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .informative-stand__list {
   list-style-type: none;
   padding: 0 30px 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    column-count: 2;
+    padding: 0;
+  }
 }
 
 .informative-stand__item {
@@ -43,5 +69,10 @@
 
   &--present {
     background-image: url("../img/present.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
   }
 }

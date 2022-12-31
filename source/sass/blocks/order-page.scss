@@ -2,9 +2,33 @@
   background-color: #ffffff;
   padding-left: 30px;
   padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.order-page__container {
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .order-page__description {
   font-size: 13px;
   margin-top: 0;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 17px;
+    padding: 50px 50px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 0 0 0;
+  }
 }
