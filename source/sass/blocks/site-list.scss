@@ -23,7 +23,7 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
-    padding: 0 18px;
+    padding: 0 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,21 +38,22 @@
 
 .site-list__link {
   display: inline-block;
-  padding: 29px 65px;
+  padding: 29px 30px 27px 76px;
   width: 100%;
   font-size: 17px;
   line-height: 24px;
+  text-align: left;
   text-decoration: none;
   color: #000000;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
-    padding: 20px 0 20px;
+    padding: 21px 0 20px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
-    padding: 30px 0 35px;
+    padding: 34px 0 31px;
   }
 }
