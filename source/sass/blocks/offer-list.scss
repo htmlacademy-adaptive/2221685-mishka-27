@@ -19,7 +19,12 @@
   &:first-child {
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 28px;
+  }
 }
+
 
 .offer-list__link {
   display: inline-block;

@@ -44,6 +44,12 @@
       border-left: 1px solid rgba(0, 0, 0, 0.1);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--cart {
+      padding: 33px 2px 30px 29px;
+    }
+  }
 }
 
 .user-list__magnifying-glass-icon {
@@ -64,6 +70,10 @@
   @media (min-width: $tablet-width) {
     position: static;
     margin-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 28px;
   }
 }
 

@@ -251,21 +251,21 @@
   </footer>
   <div class="modal-container modal-container--close">
     <div class="modal">
-      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="modal-form__title">Добавить в корзину</h2>
-        <p class="modal-form__text">Выберите размер:</p>
-        <div class="modal-form__container">
-          <label class="modal-form__control">
-            <input class="modal-form__size-button visually-hidden" type="radio" name="size" value="S">
-            <span class="modal-form__button-name">S</span>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="modal__form-title">Добавить в корзину</h2>
+        <p class="modal__form-text">Выберите размер:</p>
+        <div class="modal__form-container">
+          <input class="modal__form-size-button visually-hidden" type="radio" id="size-s" name="size" value="S" checked>
+          <label class="modal__form-control" for="size-s">
+            <span class="modal__form-button-name">S</span>
           </label>
-          <label class="modal-form__control">
-            <input class="modal-form__size-button visually-hidden" type="radio" name="size" value="M">
-            <span class="modal-form__button-name">M</span>
+          <input class="modal__form-size-button visually-hidden" type="radio" id="size-m" name="size" value="M">
+          <label class="modal__form-control" for="size-m">
+            <span class="modal__form-button-name">M</span>
           </label>
-          <label class="modal-form__control">
-            <input class="modal-form__size-button visually-hidden" type="radio" name="size" value="L">
-            <span class="modal-form__button-name">L</span>
+          <input class="modal__form-size-button visually-hidden" type="radio" id="size-l" name="size" value="L">
+          <label class="modal__form-control" for="size-l">
+            <span class="modal__form-button-name">L</span>
           </label>
         </div>
         <button class="modal__button" type="submit">Добавить</button>
