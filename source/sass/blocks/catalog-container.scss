@@ -1,9 +1,18 @@
 .catalog-container {
   background-color: #ffffff;
   padding-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 108px;
+  }
 }
 
 .catalog-container__header {
+  position: relative;
   min-height: 177px;
   text-align: center;
   background-color: #f2f2f2;
@@ -16,9 +25,35 @@
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      position: absolute;
+      background-image: url("../../img/zigzag-white.svg");
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 15px;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 94px;
   }
 }
 
 .catalog-container__title {
   margin: 0;
+  font-size: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

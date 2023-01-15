@@ -1,5 +1,6 @@
 .informative-stand {
-  margin-top: 30px;
+  margin-top: 24px;
+  margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
@@ -7,17 +8,20 @@
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 82px;
+    margin-bottom: 35px;
+    margin-top: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    margin-bottom: 89px;
+    padding-left: 120px;
+    margin-bottom: 44px;
+    margin-top: 0;
+    padding-top: 47px;
   }
 }
 
 .informative-stand__title {
-  margin: 0 30px 30px 30px;
+  margin: 0 30px 29px 30px;
   font-size: 25px;
 
   @media (min-width: $tablet-width) {
@@ -25,6 +29,11 @@
     line-height: 50px;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -36,6 +45,11 @@
   @media (min-width: $tablet-width) {
     column-count: 2;
     padding: 0;
+    padding-right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 79px;
   }
 }
 
@@ -49,30 +63,39 @@
 
   &--flower {
     background-image: url("../img/flower.svg");
+    background-position: left 8px top 0;
   }
 
   &--ruble {
     background-image: url("../img/ruble.svg");
+    background-position: left 1px top 0;
   }
 
   &--heart {
     background-image: url("../img/heart.svg");
+    background-position: left 6px top 5px;
   }
 
   &--ball {
     background-image: url("../img/ball.svg");
+    background-position: left 4px top 1px;
   }
 
   &--rocket {
     background-image: url("../img/rocket.svg");
+    background-position: left -6px top 1px;
   }
 
   &--present {
     background-image: url("../img/present.svg");
+    background-position: left 3px top 1px;
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 67px;
+    margin-bottom: 44px;
     font-size: 20px;
     line-height: 22px;
+    background-position: left 3px top 14px;
   }
 }

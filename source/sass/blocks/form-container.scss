@@ -1,4 +1,5 @@
 .form-container__header {
+  position: relative;
   min-height: 177px;
   padding-top: 74px;
   box-sizing: border-box;
@@ -10,9 +11,35 @@
     font-weight: 700;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      position: absolute;
+      background-image: url("../../img/zigzag-white.svg");
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 15px;
+      content: "";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 96px;
   }
 }
 
 .form-container__title {
   margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
