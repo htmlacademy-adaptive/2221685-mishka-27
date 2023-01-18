@@ -15,9 +15,14 @@
     margin: 0;
     margin-bottom: 23px;
     padding: 87px 50px 142px;
-    background-image: url("../img/napkin.png");
+    background-image: url("../img/napkin.jpeg");
     background-repeat: no-repeat;
     background-size: 350px, 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/napkin@2x.jpeg");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -113,6 +118,17 @@
   border: 2px solid #444444;
   text-transform: uppercase;
 
+  &:hover {
+    color: #ffffff;
+    background-color: rgba(68, 68, 68, 1);
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+    background-color: rgba(68, 68, 68, 1);
+  }
+
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 83px;
@@ -147,28 +163,47 @@
 }
 
 .reviews__slide-button {
+  position: relative;
   width: 130px;
   height: 52px;
   border: 1px solid #ececec;
   background-color: #ffffff;
+  cursor: pointer;
 
-  &--previous {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 26px;
     border-right-width: 0.5px;
     background-image: url("../../img/huge-arrow-left.svg");
+    fill: #000000;
     background-repeat: no-repeat;
     background-position: center;
+    right: 41px;
+    top: 10px;
   }
 
-  &--next {
+  &--next::after {
     border-left-width: 0.5px;
-    background-image: url("../../img/huge-arrow-left.svg");
     transform: scale(-1, 1);
-    background-repeat: no-repeat;
-    background-position: center;
+  }
+
+  &:hover::after {
+    opacity: 0.6;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
     width: 88px;
     border: none;
+
+    &::after {
+      right: 20px;
+      top: 14px;
+    }
   }
 }

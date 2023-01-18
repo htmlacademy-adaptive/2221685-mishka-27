@@ -32,6 +32,10 @@
   background-size: 100% 23px;
   background-position: bottom;
 
+  & picture {
+    display: contents;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 50px;
     padding-bottom: 82px;
@@ -197,6 +201,17 @@
   color: #444444;
   background-color: #ffffff;
   border: 2px solid #444444;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: rgba(68, 68, 68, 1);
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+    background-color: rgba(68, 68, 68, 1);
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
