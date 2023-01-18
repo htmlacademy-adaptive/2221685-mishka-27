@@ -26,6 +26,14 @@
 
 .page-footer__logo-link {
   display: inline-block;
+
+  &:hover .page-footer__logo-icon {
+    fill: rgba(70, 193, 174, 1);
+  }
+
+  &:active .page-footer__logo-icon {
+    fill: rgba(70, 193, 174, 0.3);
+  }
 }
 
 
@@ -43,6 +51,18 @@
   width: 142px;
   margin: 25px auto;
   justify-content: space-between;
+}
+
+.page-footer__social-icon {
+  fill: #231f20;
+
+  .page-footer__social-link:hover & {
+    fill: #63d1bb;
+  }
+
+  .page-footer__social-link:active & {
+    fill: rgb(99, 209, 187, 0.3);
+  }
 }
 
 .page-footer__copyright {
@@ -65,6 +85,19 @@
   width: 100%;
   align-items: center;
   text-decoration: none;
+}
+
+.page-footer__copyright-icon {
+  fill: #63d1bb;
+
+  .page-footer__copyright-link:hover & {
+    fill: #46c1ae;
+  }
+
+  .page-footer__copyright-link:active & {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright-title {

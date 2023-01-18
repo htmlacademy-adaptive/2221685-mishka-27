@@ -13,30 +13,71 @@
 }
 
 .front-catalog__item {
+  position: relative;
   text-decoration: none;
   background-color: #63d1bb;
   background-repeat: no-repeat;
 
-  &--lamp {
-    background-image: url("../img/lamp.svg");
-    background-position: center right 35px;
+  &:hover,
+  &:active {
+    background-color: #59d5bc;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 
   &--lego {
     background-color: #56c3b2;
+  }
+
+  &--lego:hover,
+  &--lego:active {
+    background-color: #46c1ae;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &--lamp::after {
+    width: 40px;
+    height: 62px;
+    right: 36px;
+    top: 23px;
+    background-image: url("../img/lamp.svg");
+    background-position: center;
+    opacity: 0.5;
+  }
+
+  &--lego::after {
+    width: 60px;
+    height: 60px;
+    right: 27px;
+    top: 21px;
     background-image: url("../img/lego.svg");
-    background-position: center right 26px;
+    background-position: center;
+    opacity: 0.5;
   }
 
   @media (min-width: $tablet-width) {
     width: 50%;
 
-    &--lamp {
-      background-position: center right 37px;
+    &--lamp::after {
+      right: 37px;
+      top: 30px;
+      background-position: center;
     }
 
-    &--lego {
-      background-position: center right 33px;
+    &--lego::after {
+      right: 34px;
+      top: 31px;
+      background-position: center;
     }
   }
 }

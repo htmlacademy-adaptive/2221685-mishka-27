@@ -253,6 +253,14 @@
     content: "";
   }
 
+  &:hover {
+    border-color: #63d1bb;
+  }
+
+  &:active {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 46px;
     height: 46px;
@@ -280,6 +288,14 @@
     background-repeat: no-repeat;
     background-size: 23px 16px;
     background-position: center;
+  }
+
+  &:hover {
+    border-color: #63d1bb;
+  }
+
+  &:active {
+    border-color: rgba(68, 68, 68, 0.3);
   }
 
   @media (min-width: $tablet-width) {
@@ -333,16 +349,9 @@
     padding-bottom: 17px;
   }
 
-  &--tel {
-    background-image: url("../img/phone.svg");
-    background-repeat: no-repeat;
-    background-position: top 4px right 9px;
-  }
-
-  &--email {
-    background-image: url("../img/mail.svg");
-    background-repeat: no-repeat;
-    background-position: top 9px right 5px;
+  &:hover,
+  &:active {
+    box-shadow: inset 0 -2px 0 #61d1bb;
   }
 
   @media (min-width: $tablet-width) {
@@ -356,27 +365,47 @@
       padding-bottom: 13px;
     }
 
-    &--tel {
-      background-position: top 10px right 26px;
-    }
-
-    &--email {
-      background-position: top 15px right 22px;
-    }
-
     .form__group-container--contacts & {
       background-color: #f1f1f1;
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    &--tel {
-      background-position: top 10px right 8px;
-    }
+.form__text-input-icon {
+  opacity: 0.2;
+  position: absolute;
+  right: 7px;
+  top: 6px;
+
+  &--email {
+    right: 3px;
+    top: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 26px;
+    top: 10px;
 
     &--email {
-      background-position: top 15px right 4px;
+      right: 22px;
+      top: 15px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 8px;
+    top: 10px;
+
+    &--email {
+      right: 4px;
+      top: 15px;
+    }
+  }
+
+  .form__label:hover &,
+  .form__label:active & {
+    opacity: 1;
+    fill: #62d1ba;
   }
 }
 
@@ -390,6 +419,11 @@
   line-height: 18px;
   box-sizing: border-box;
   border: 2px solid #444444;
+
+  &:hover,
+  &:active {
+    border-color: #63d1bb;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -442,6 +476,17 @@
   color: #444444;
   background-color: #ffffff;
   border: 2px solid #444444;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: rgba(68, 68, 68, 1);
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+    background-color: rgba(68, 68, 68, 1);
+  }
 
   @media (min-width: $tablet-width) {
     width: 230px;

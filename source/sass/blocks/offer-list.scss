@@ -34,6 +34,14 @@
   color: #000000;
   box-sizing: border-box;
 
+  &:hover {
+    color: rgb(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgb(0, 0, 0, 0.3);
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 15px;
     padding: 20px 2px 20px;
