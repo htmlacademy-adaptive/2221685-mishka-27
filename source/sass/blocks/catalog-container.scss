@@ -35,6 +35,14 @@
       height: 15px;
       content: "";
     }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        background-image: url("../img/zigzag-fill-bigger-desktop.svg");
+        height: 17px;
+        background-size: auto 31px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
