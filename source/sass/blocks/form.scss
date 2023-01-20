@@ -192,10 +192,6 @@
     margin-bottom: 18px;
   }
 
-  &--extension {
-    // margin-bottom: 2px;
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     width: auto;
@@ -311,6 +307,32 @@
   @media (min-width: $desktop-width) {
     top: -1px;
   }
+}
+
+.form__label:hover .form__label-control-window,
+input[type="checkbox"]:focus + .form__label-control-window {
+  border-color: #63d1bb;
+}
+
+.form__label:active .form__label-control-window {
+  border-color: #4444444d;
+}
+
+.form__label:hover .form__label-control-mark,
+input[type="radio"]:focus + .form__label-control-mark {
+  border-color: #63d1bb;
+}
+
+.form__label:active .form__label-control-mark {
+  border-color: #4444444d;
+}
+
+input[type="radio"]:disabled + .form__label-control-mark {
+  border-color: #e5e5e5;
+}
+
+input[type="checkbox"]:disabled + .form__label-control-window {
+  border-color: #e5e5e5;
 }
 
 .form__group-contacts-container {
