@@ -15,12 +15,12 @@
     margin: 0;
     margin-bottom: 23px;
     padding: 87px 50px 142px;
-    background-image: url("../img/napkin.jpeg");
+    background-image: url("../img/napkin.jpg");
     background-repeat: no-repeat;
     background-size: 350px, 457px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/napkin@2x.jpeg");
+      background-image: url("../img/napkin@2x.jpg");
       background-size: 350px auto;
     }
   }
