@@ -50,7 +50,7 @@
   position: absolute;
   width: 20px;
   height: 14px;
-  background-image: url("../../img/menu.svg");
+  background-image: url("../img/menu.svg");
   top: 32px;
   right: 31px;
   display: inline-block;
@@ -60,7 +60,7 @@
 
 
   .main-nav--opened & {
-    background-image: url("../../img/menu-close.svg");
+    background-image: url("../img/menu-close.svg");
     width: 21px;
     height: 20px;
   }
