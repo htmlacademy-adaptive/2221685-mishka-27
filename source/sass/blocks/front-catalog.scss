@@ -17,6 +17,7 @@
   text-decoration: none;
   background-color: #63d1bb;
   background-repeat: no-repeat;
+  align-self: end;
 
   &:hover,
   &:active {
@@ -97,5 +98,13 @@
     padding-left: 36px;
     font-size: 20px;
     line-height: 30px;
+
+    box-sizing: border-box;
+    // max-height: 121px;
+
+    &:hover {
+      padding-bottom: 40px;
+      // max-height: 126px;
+    }
   }
 }

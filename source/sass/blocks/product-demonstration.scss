@@ -5,7 +5,7 @@
   @media (min-width: $tablet-width) {
     &::before {
       position: absolute;
-      background-image: url("../../img/zigzag-white.svg");
+      background-image: url("../img/zigzag-white.svg");
       top: -13px;
       left: 0;
       right: 0;
@@ -29,7 +29,7 @@
   padding-bottom: 50px;
   background-image: url("../img/zigzag-line-mob.svg");
   background-repeat: no-repeat;
-  background-size: 100% 23px;
+  background-size: 100% 10px;
   background-position: bottom;
 
   picture,
@@ -40,6 +40,7 @@
   @media (min-width: $tablet-width) {
     padding: 50px;
     padding-bottom: 82px;
+    background-size: 100% 19px;
   }
 
   @media (min-width: $desktop-width) {
