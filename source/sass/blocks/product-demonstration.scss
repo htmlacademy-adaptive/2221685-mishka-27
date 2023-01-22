@@ -32,8 +32,8 @@
   background-size: 100% 23px;
   background-position: bottom;
 
-  & picture,
-  & source {
+  picture,
+  source {
     display: contents;
   }
 
