@@ -24,6 +24,10 @@
   }
 }
 
+.page-footer__logo-icon {
+  display: block;
+}
+
 .page-footer__logo-link {
   display: inline-block;
 
@@ -38,8 +42,11 @@
 
 
 .page-footer__social {
+  margin-top: 25px;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-top: 0;
     align-items: center;
   }
 }
@@ -49,7 +56,7 @@
   list-style-type: none;
   padding-left: 0;
   width: 142px;
-  margin: 25px auto;
+  margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -66,16 +73,22 @@
 }
 
 .page-footer__copyright {
-  width: 182px;
-  margin: 25px auto;
-  margin-top: 38px;
+  width: 260px;
+  box-sizing: border-box;
+  padding: 22px 39px;
+  margin: 22px auto 0;
+  border-top: solid 1px #e5e5e5;
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    width: 182px;
     margin: 0;
+    margin-bottom: 11px;
+    padding: 0;
     font-size: 19px;
     line-height: 18px;
+    border-top: none;
   }
 }
 

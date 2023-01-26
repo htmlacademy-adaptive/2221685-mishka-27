@@ -129,6 +129,8 @@
 }
 
 .product-demonstration__description-wrapper {
+  color: #444444;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 334px;

@@ -76,6 +76,7 @@
 .contacts__row {
   display: inline-block;
   position: relative;
+  color: #444444;
   font-size: 14px;
   margin-bottom: 27px;
 
@@ -169,11 +170,11 @@
 }
 
 .contacts__button-wrapper {
-  padding: 41px 30px;
+  padding: 41px 30px 39px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 50px 57px;
+    padding: 55px 50px 60px;
   }
 
   @media (min-width: $desktop-width) {
