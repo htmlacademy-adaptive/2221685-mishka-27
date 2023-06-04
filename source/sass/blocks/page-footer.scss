@@ -94,7 +94,7 @@
 
 .page-footer__copyright-link {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   width: 100%;
   align-items: center;
   text-decoration: none;
@@ -119,3 +119,9 @@
   font-size: 19px;
   line-height: 18px;
 }
+
+// .page-footer__copyright-logo {
+//   position: absolute;
+//   top: 23px;
+//   left: 30px;
+// }
