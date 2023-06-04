@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>HTML Academy: Мишка</title>
+  <title>HTML Academy: Mishka</title>
 </head>
 
 <body class="page__body">
@@ -21,22 +21,22 @@
         </a>
       </div>
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Open menu</span>
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          <a class="site-list__link" href="catalog.html">Catalog</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          <a class="site-list__link" href="form.html">Bespoke knitting</a>
         </li>
       </ul>
       <ul class="main-nav__list offer-list">
         <li class="offer-list__item">
-          <a class="offer-list__link offer-list__link--new-goods" href="#">Новые поступления</a>
+          <a class="offer-list__link offer-list__link--new-goods" href="#">New arrivals</a>
         </li>
         <li class="offer-list__item">
-          <a class="offer-list__link" href="#">Распродажа</a>
+          <a class="offer-list__link" href="#">Sale</a>
         </li>
       </ul>
       <ul class="main-nav__list user-list">
@@ -45,7 +45,7 @@
             <svg class="user-list__magnifying-glass-icon" aria-hidden="true" focusable="false" width="18" height="18">
               <use xlink:href="img/sprite.svg#magnifying-glass"></use>
             </svg>
-            <span class="user-list__link-text">Поиск по сайту</span>
+            <span class="user-list__link-text">Search</span>
           </a>
         </li>
         <li class="user-list__item">
@@ -53,40 +53,39 @@
             <svg class="user-list__cart-icon" width="21" height="18">
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
-            Корзина: пока пуста
+            Cart: currently empty
           </a>
         </li>
       </ul>
-      <div class="main-nav__delivery">Бесплатная доставка по России</div>
+      <div class="main-nav__delivery">Free shipping within UK</div>
     </nav>
   </header>
   <main class="form-container">
     <header class="form-container__header">
-      <h2 class="form-container__title">Вязание на заказ</h2>
+      <h2 class="form-container__title">Bespoke knitting</h2>
     </header>
     <section class="order-page">
       <div class="order-page__container">
-        <h3 class="visually-hidden">Форма для заполнения</h3>
-        <p class="order-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
-          заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <h3 class="visually-hidden">Full-out form</h3>
+        <p class="order-page__description">We would be delighted to bring your wishes to life! Please fill out a simple order form, and we will contact you to clarify the details.</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__group">
           <div class="form__group-container">
-            <h4 class="form__group-title"><span class="form__group-title-text">Тип</span></h4>
+            <h4 class="form__group-title"><span class="form__group-title-text">Type</span></h4>
             <ul class="form__list">
               <li class="form__list-item">
                 <label class="form__label form__label--control-item">
                   <input class="visually-hidden form__label-input" type="radio" name="item" value="interior" checked>
                   <span class="form__label-control-mark"></span>
-                  <span class="form__label-name">Аксессуар для интерьера</span>
+                  <span class="form__label-name">Interior accessory</span>
                 </label>
               </li>
               <li class="form__list-item">
                 <label class="form__label form__label--control-item">
                   <input class="visually-hidden form__label-input" type="radio" name="item" value="toy">
                   <span class="form__label-control-mark"></span>
-                  <span class="form__label-name">Детская игрушка</span>
+                  <span class="form__label-name">Children's toy</span>
                 </label>
               </li>
             </ul>
@@ -94,48 +93,48 @@
         </fieldset>
         <fieldset class="form__group">
           <div class="form__group-container form__group-container--select-options">
-            <h4 class="form__group-title"><span class="form__group-title-text">Цвет</span></h4>
+            <h4 class="form__group-title"><span class="form__group-title-text">Colour</span></h4>
             <ul class="form__list form__list--checkbox">
               <li class="form__list-item form__list-item--checkbox">
                 <label class="form__label form__label--control-item">
                   <input class="visually-hidden form__label-input" type="checkbox" name="white" checked>
                   <span class="form__label-control-window"></span>
-                  <span class="form__label-name">Белый</span>
+                  <span class="form__label-name">White</span>
                 </label>
               </li>
               <li class="form__list-item form__list-item--checkbox">
                 <label class="form__label form__label--control-item">
                   <input class="visually-hidden form__label-input" type="checkbox" name="grey" checked>
                   <span class="form__label-control-window"></span>
-                  <span class="form__label-name">Серый</span>
+                  <span class="form__label-name">Grey</span>
                 </label>
               </li>
               <li class="form__list-item form__list-item--checkbox">
                 <label class="form__label form__label--control-item">
                   <input class="visually-hidden form__label-input" type="checkbox" name="tiffany">
                   <span class="form__label-control-window"></span>
-                  <span class="form__label-name">Тиффани</span>
+                  <span class="form__label-name">Tiffany</span>
                 </label>
               </li>
               <li class="form__list-item form__list-item--checkbox">
                 <label class="form__label form__label--control-item">
                   <input class="visually-hidden form__label-input" type="checkbox" name="black">
                   <span class="form__label-control-window"></span>
-                  <span class="form__label-name">Черный</span>
+                  <span class="form__label-name">Black</span>
                 </label>
               </li>
               <li class="form__list-item form__list-item--checkbox">
                 <label class="form__label form__label--control-item">
                   <input class="visually-hidden form__label-input" type="checkbox" name="pink">
                   <span class="form__label-control-window"></span>
-                  <span class="form__label-name">Розовый</span>
+                  <span class="form__label-name">Pink</span>
                 </label>
               </li>
               <li class="form__list-item form__list-item--checkbox">
                 <label class="form__label form__label--control-item">
                   <input class="visually-hidden form__label-input" type="checkbox" name="orange">
                   <span class="form__label-control-window"></span>
-                  <span class="form__label-name">Оранжевый</span>
+                  <span class="form__label-name">Orange</span>
                 </label>
               </li>
             </ul>
@@ -143,19 +142,19 @@
         </fieldset>
         <fieldset class="form__group form__group--full-name">
           <div class="form__group-container">
-            <h4 class="form__group-title"><span class="form__group-title-text">фио</span></h4>
+            <h4 class="form__group-title"><span class="form__group-title-text">Full name</span></h4>
             <div class="form__label-wrapper">
               <label class="form__label form__label--enter-field">
-                <span class="form__label-name">Имя:</span>
-                <input class="form__text-input" type="text" name="name" placeholder="Введите ваше имя*">
+                <span class="form__label-name">First name:</span>
+                <input class="form__text-input" type="text" name="name" placeholder="Please enter your  first name*">
               </label>
               <label class="form__label form__label--enter-field">
-                <span class="form__label-name">Фамилия:</span>
-                <input class="form__text-input" type="text" name="lastname" placeholder="Укажите фамилию*">
+                <span class="form__label-name">Middle name:</span>
+                <input class="form__text-input" type="text" name="lastname" placeholder="Middle name if you wish to">
               </label>
               <label class="form__label form__label--enter-field">
-                <span class="form__label-name">Отчество:</span>
-                <input class="form__text-input" type="text" name="fathersname" placeholder="Отчество, если желаете">
+                <span class="form__label-name">Last name:</span>
+                <input class="form__text-input" type="text" name="fathersname" placeholder="Please enter your last name*">
               </label>
             </div>
           </div>
@@ -163,10 +162,10 @@
         <fieldset class="form__group form__group--contacts">
           <div class="form__group-container form__group-container--contacts">
             <div class="form__group-contacts-container">
-              <h4 class="form__group-title form__group-title--contacts"><span class="form__group-title-text">тел</span>
+              <h4 class="form__group-title form__group-title--contacts"><span class="form__group-title-text">tel</span>
               </h4>
               <label class="form__label form__label--extension">
-                <span class="visually-hidden">тел</span>
+                <span class="visually-hidden">tel</span>
                 <input class="form__text-input form__text-input--contact-info form__text-input--tel" type="tel"
                   name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                 <svg class="form__text-input-icon form__text-input-icon--phone" width="25" height="24">
@@ -193,14 +192,14 @@
             <h4 class="form__group-title form__group-title--addition"><span class="form__group-title-text">Доп</span>
             </h4>
             <label class="form__label form__label--extension">
-              <span class="visually-hidden">Дополнительный комментарий к заказу</span>
-              <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <span class="visually-hidden">Note for the order</span>
+              <textarea class="form__textarea" placeholder="Please describe all your preferences and specifications for the order."></textarea>
             </label>
           </div>
         </fieldset>
         <div class="form__button-wrapper">
-          <span class="form__small-text">*Поля обязательны для заполнения</span>
-          <button class="form__button" type="submit">отправить заказ</button>
+          <span class="form__small-text">*Fields are required to be filled in.</span>
+          <button class="form__button" type="submit">Submit order</button>
         </div>
       </form>
     </section>
@@ -211,14 +210,14 @@
         <svg class="page-footer__logo-icon" width="102" height="35" viewBox="0 0 102 35">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
-        <span class="visually-hidden">логотип "Мишка"</span>
+        <span class="visually-hidden">logotype "Mishka"</span>
       </a>
     </div>
     <section class="page-footer__social">
-      <h3 class="visually-hidden">Социальные сети</h3>
+      <h3 class="visually-hidden">Social</h3>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
+          <a class="page-footer__social-link" href="https://www.linkedin.com/in/nika-buzynska-a88224271/">
             <svg class="page-footer__social-icon" width="28" height="23">
               <use xlink:href="img/sprite.svg#vkontakte"></use>
             </svg>
@@ -226,7 +225,7 @@
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
+          <a class="page-footer__social-link" href="https://www.linkedin.com/in/nika-buzynska-a88224271/">
             <svg class="page-footer__social-icon" width="28" height="23">
               <use xlink:href="img/sprite.svg#youtube"></use>
             </svg>
@@ -234,7 +233,7 @@
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
+          <a class="page-footer__social-link" href="https://www.linkedin.com/in/nika-buzynska-a88224271/">
             <svg class="page-footer__social-icon" width="28" height="23">
               <use xlink:href="img/sprite.svg#telegram"></use>
             </svg>
@@ -245,11 +244,11 @@
     </section>
     <section class="page-footer__copyright">
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
-        <h3 class="page-footer__copyright-title">Разработано</h3>
+        <h3 class="page-footer__copyright-title">Nika Buzynsak</h3>
         <svg class="page-footer__copyright-icon" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
-        <span class="visually-hidden">html Academy</span>
+        <span class="visually-hidden">Nika Buzynska</span>
       </a>
     </section>
   </footer>
